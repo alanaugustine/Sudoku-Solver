@@ -24,7 +24,7 @@ def main():
             mouse=pygame.mouse.get_pos()
             for row in range(9):
                 for col in range(9):
-                    if ((mouse[0]<=row*50++50 and mouse[0]>=row*50 ) and (mouse[1]<= col*50+50 and mouse[1]>=col*50)):
+                    if ((mouse[0]<=row*50+50 and mouse[0]>=row*50 ) and (mouse[1]<= col*50+50 and mouse[1]>=col*50)):
                         pygame.draw.rect(screen,red,(row*50,col*50,50,50),1)
                     else:
                         pygame.draw.rect(screen,black,(row*50,col*50,50,50),1)
